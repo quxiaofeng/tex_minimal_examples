@@ -1,0 +1,1 @@
+del *.aux *.log *.nav *.out *.snm *.gz *.toc *.gz(busy) *.pdf *~ *.swp

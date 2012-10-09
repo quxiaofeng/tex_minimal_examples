@@ -1,0 +1,25 @@
+\documentclass{beamer}
+
+\usepackage{enumitem}
+\setenumerate[1]{label=\arabic*.}
+\newcounter{ResumeEnumerate}
+
+\begin{document}
+\begin{frame}
+   Test-text begins here.
+   \begin{enumerate}
+      \item First item.
+      \item Second item.
+   \end{enumerate}
+   More text. Let us now resume the enumeration:
+   \begin{enumerate}[resume]
+      \item Third item.
+   \end{enumerate}
+   \setcounter{ResumeEnumerate}{\value{enumi}}
+\end{frame}
+\begin{frame}
+   \begin{enumerate}[start=\numexpr\value{ResumeEnumerate}+1]
+      \item This should be the fourth item.
+   \end{enumerate}
+\end{frame}   
+\end{document}

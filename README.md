@@ -7,7 +7,7 @@ LaTeX FAQ - Minimal Examples
 
 Using enumitem to set the numbers of list envs(enumerate).
 
-+ framebreak.txt
++ framebreak.tex
 
 break one frame into several pages.
 
